@@ -1,0 +1,41 @@
+// .top-most-categories {
+//   .MuiTabs-scroller.MuiTabs-fixed {
+//     overflow: scroll !important;
+//     max-width: 100%;
+//   }
+// }
+
+.MuiTabs-scroller.MuiTabs-fixed {
+  overflow: scroll !important;
+  max-width: 100%;
+}
+
+.top-most-categories {
+  .category-list {
+    list-style: none;
+    max-width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    border-bottom: 1px solid #ddd;
+
+    .list-item {
+      padding: 10px 15px 8px 15px;
+
+      &.active {
+        border-bottom: 2px solid #000;
+
+        a {
+          color: #000;
+          font-weight: 900;
+          font-size: 12px;
+          display: inline-block;
+        }
+      }
+    }
+
+    a {
+      white-space: nowrap;
+      font-size: 12px;
+    }
+  }
+}
